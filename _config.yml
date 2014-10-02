@@ -1,9 +1,8 @@
 # Site settings
 title: Media Design Works 2014
-description: > # this means to ignore newlines until "baseurl:"
+description: >
   東京造形大学メディアデザイン専攻領域の学生による自主制作展です。
   会期: 2014年10月17日〜19日
-baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://mdw2014.github.io" # the base hostname & protocol for your site
 
 # Build settings
