@@ -2,22 +2,37 @@
 layout: default
 ---
 
-<div class="home">
+<section>
+  <div class="wrapper">
+    <h1 class="section-heading"></h1>
+  </div>
+</section>
 
-  <h1 class="page-heading">Posts</h1>
+<div class="capsule">
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+  <section>
+    <div class="wrapper">
+      <div class="section-heading-wrapper section-heading-wrapper--capsule-top">
+        <h1 class="section-heading"></h1>
+      </div>
+    </div>
+  </section>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+  <section>
+    <div class="wrapper">
+      <div class="section-heading-wrapper">
+        <h1 class="section-heading"></h1>
+      </div>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrapper">
+      <div class="section-heading-wrapper">
+        <h1 class="section-heading"></h1>
+      </div>
+    </div>
+  </section>
 
 </div>
