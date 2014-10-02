@@ -14,6 +14,11 @@ layout: default
     <div class="wrapper">
       <div class="section-heading-wrapper section-heading-wrapper--capsule-top">
         <h1 class="section-heading">About</h1>
+        <p>今年も東京造形大学 Creative Spiral Festival にて、昨年の Media Design Works 2013に引き続き、 Media Design Works 2014 を開催します。</p>
+        <p>東京造形大学メディアデザイン専攻領域の全学年から集まった有志学生が制作した、多数の作品が集まりました。</p>
+        <p>他専攻の展示にはない、実際に触れて体験できる作品を中心に、様々なジャンルの作品を展示します。</p>
+        <p>ぜひご来場ください。</p>
+        <p>Media Design Works 2014 一同</p>
       </div>
     </div>
   </section>
@@ -25,11 +30,19 @@ layout: default
       </div>
       {% for work in site.data.works %}
       <section class="work">
-        <h1 class="work-heading">{{ work.title }}</h1>
-        <img src="{{ work.images[1] }}" alt="{{ work.title }}">
+        <h2 class="work-heading">{{ work.title }}</h2>
+        {% if work.images %}
+        <img src="img/works/{{ work.title }}/{{ work.images[0] }}" alt="作品画像">
         {% for src in work.images %}
-         <p>{{ src }}</p>
+        <img src="img/works/{{ work.title }}/{{ src }}" alt="作品画像">
         {% endfor %}
+        {% else %}
+        <img src="img/works/no-image.gif" alt="No Image">
+        {% endif %}
+        <div class="description">
+          <div class="author">{% if work.icon %}<img src="img/works/{{ work.title }}/{{ work.icon }}" alt="アイコン">{% endif %}{{ work.author }}</div>
+          <div class="description">{{ work.description }}</div>
+        </div>
       </section>
       {% endfor %}
     </div>
@@ -57,6 +70,14 @@ layout: default
     <div class="wrapper">
       <div class="section-heading-wrapper">
         <h1 class="section-heading">Info</h1>
+        <h2>開催概要</h2>
+        <h3>会期</h3>
+        <p>10月18日(金) 12:00~20:00</p>
+        <p>10月19日(土)・20日(日) 10:00~20:00</p>
+        <h3>場所</h3>
+        <p>東京造形大学 7号館4階 7-406教室</p>
+        <h3>アクセス</h3>
+        <p>JR横浜線 相原駅よりスクールバスが運行されます。スクールバスの時刻表など、詳しくは<a href="http://zokei-csf.com/access.html">CS祭公式サイト</a>をご覧ください。</p>
       </div>
     </div>
   </section>
