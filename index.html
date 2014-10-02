@@ -23,7 +23,15 @@ layout: default
       <div class="section-heading-wrapper">
         <h1 class="section-heading"></h1>
       </div>
-
+      {% for work in site.data.works %}
+      <section class="work">
+        <h1 class="work-heading">{{ work.title }}</h1>
+        <img src="{{ work.images[1] }}" alt="{{ work.title }}">
+        {% for src in work.images %}
+         <p>{{ src }}</p>
+        {% endfor %}
+      </section>
+      {% endfor %}
     </div>
   </section>
 
