@@ -1,0 +1,53 @@
+---
+---
+@charset 'utf-8';
+
+body, html {
+  background-color: #f4e84e;
+  color: #222;
+}
+
+a {
+  color: #2A4FC1;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.wrapper {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.nav {
+  background-color: #fff;
+}
+
+.nav ul {
+  margin: 0;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+}
+
+.nav ul li {
+  list-style-type: none;
+  display: inline;
+}
+
+.site-header .banner {
+  text-align: center;
+}
+
+.site-header .banner .identity {
+  width: 600px;
+}
+
+
+.site-footer .text {
+  text-align: center;
+}
