@@ -32,15 +32,15 @@ layout: default
       <section class="work">
         <h2 class="work-heading">{{ work.title }}</h2>
         {% if work.images %}
-        <img src="img/works/{{ work.title }}/{{ work.images[0] }}" alt="作品画像">
+        <img src="img/works/{{ work.dir }}/{{ work.images[0] }}" alt="作品画像">
         {% for src in work.images %}
-        <img src="img/works/{{ work.title }}/{{ src }}" alt="作品画像">
+        <img src="img/works/{{ work.dir }}/{{ src }}" alt="作品画像">
         {% endfor %}
         {% else %}
         <img src="img/works/no-image.gif" alt="No Image">
         {% endif %}
         <div class="description">
-          <div class="author">{% if work.icon %}<img src="img/works/{{ work.title }}/{{ work.icon }}" alt="アイコン">{% endif %}{{ work.author }}</div>
+          <div class="author">{% if work.icon %}<img src="img/works/{{ work.dir }}/{{ work.icon }}" alt="アイコン">{% endif %}{{ work.author }}</div>
           <div class="description">{{ work.description }}</div>
         </div>
       </section>
