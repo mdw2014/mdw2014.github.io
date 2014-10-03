@@ -1,2 +1,10 @@
 - title: Test
   description: This is a test content.
+  author: John Doe
+
+- title: 任意の画像にレンズフレアを合成するソフト
+  description: みんな大好きレンズフレアを任意の画像に合成します。
+  images:
+    - image001.png
+  author: 浜田祥太
+  icon: icon.png
