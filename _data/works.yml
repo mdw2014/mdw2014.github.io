@@ -6,18 +6,6 @@
     - image001.png
   icon: icon.png
 
-- title: 3d6
-  author: 矢作大樹
-  description: 是非見に来てください。よろしくお願いします。
-  dir: 3d6
-  icon: icon.jpg
-
-- title: story
-  author: 田中　水沙希
-  description: 女の子とクマのおはなし
-  dir: story
-  icon: icon.jpg
-
 - title: 魔法使い+1
   author: 保坂 千晶
   description: 魔法使いになりたかった少年と、魔法使いになりたくなかった少年の、夏と冬。(小説のサンプルの頒布を行います。続きはwebで <a href="http://wizard-plus1.tumblr.com" target="_blank">http://wizard-plus1.tumblr.com</a> )
@@ -78,12 +66,6 @@
     - image003.png
   icon: icon.png
 
-- title: 使う道具は何でも良い。
-  author: 加藤　太一
-  description: メディアデザイン専攻領域に入学して４年目、パソコンの画面と向き合う毎日。しかし、物を作りたいと思う起点は私の場合『ここ』にあります。
-  dir: 使う道具は何でも良い
-  icon: icon.jpg
-
 - title: くりえいてぃぶめんたる
   author: さくさく
   description: 自分なりに出来る限りのことをしました・・・・。
@@ -100,12 +82,6 @@
     - image001.jpg
   icon: icon.png
 
-- title: カメレオンゴースト
-  author: 清水友里
-  description: Scratchで製作したおばけを操作するステルスゲームです。寝ている男の子にバレないよう、おばけの色を操作したり障害物をよけながらタイムリミット内に男の子ところまで到達して脅かしましょう。
-  dir: カメレオンゴースト
-  icon: icon.png
-
 - title: rainboard
   author: 黒木慶典
   description: Web スクレイピングで雨の情報を集めたwebサイト
@@ -113,6 +89,46 @@
   images:
     - image001.png
     - image002.png
+  icon: icon.png
+
+- title: 俺展
+  author: 棚澤直樹
+  description: 3DCGモデルを被ります。最高のモデリング体験をします。
+  dir: 俺展
+  images:
+    - image001.jpg
+  icon: icon.jpg
+
+- title: ｶﾁｶﾁ×∞
+  author: 名波伊智子
+  description: マウスでニクいアイツをｶﾁｶﾁするゲームです。
+  dir: カチカチ
+  images:
+    - image001.png
+  icon: icon.png
+
+- title: 3d6
+  author: 矢作大樹
+  description: 是非見に来てください。よろしくお願いします。
+  dir: 3d6
+  icon: icon.jpg
+
+- title: story
+  author: 田中　水沙希
+  description: 女の子とクマのおはなし
+  dir: story
+  icon: icon.jpg
+
+- title: 使う道具は何でも良い。
+  author: 加藤　太一
+  description: メディアデザイン専攻領域に入学して４年目、パソコンの画面と向き合う毎日。しかし、物を作りたいと思う起点は私の場合『ここ』にあります。
+  dir: 使う道具は何でも良い
+  icon: icon.jpg
+
+- title: カメレオンゴースト
+  author: 清水友里
+  description: Scratchで製作したおばけを操作するステルスゲームです。寝ている男の子にバレないよう、おばけの色を操作したり障害物をよけながらタイムリミット内に男の子ところまで到達して脅かしましょう。
+  dir: カメレオンゴースト
   icon: icon.png
 
 - title: さいとぅー暗殺計画
@@ -132,20 +148,4 @@
   author: 山本　裕晃　yamamoto　hiroaki
   description: 時間って不思議なものです。そんな映像をつくりました。
   dir: 時間立体ステレオグラム
-  icon: icon.png
-
-- title: 俺展
-  author: 棚澤直樹
-  description: 3DCGモデルを被ります。最高のモデリング体験をします。
-  dir: 俺展
-  images:
-    - image001.jpg
-  icon: icon.jpg
-
-- title: ｶﾁｶﾁ×∞
-  author: 名波伊智子
-  description: マウスでニクいアイツをｶﾁｶﾁするゲームです。
-  dir: カチカチ
-  images:
-    - image001.png
   icon: icon.png
