@@ -118,24 +118,31 @@ a:hover {
   margin: 0 auto;
 }
 
+.works {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+	-webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+	flex-flow: row wrap;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+}
+
 #works .section-heading,
 #works .wrapper {
   border-radius: 24px 24px 0 0;
 }
 
-.works:after {
-  content: '';
-  display: block;
-  clear: both;
-}
-
 .work {
+  -ms-flex: 0 0 320px;
+  -webkit-flex: 0 0 320px;
+  flex: 0 0 320px;
   width: 320px;
   margin: 0 30px 24px;
   position: relative;
   background-color: rgb(100, 91, 114);
   color: #fff;
-  float: left;
 }
 
 .triangle {
