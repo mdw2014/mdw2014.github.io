@@ -28,6 +28,7 @@ layout: default
         {% for work in site.data.works %}
         <section class="work">
           <h2 class="work-heading">{{ work.title }}</h2>
+          <div class="triangle"></div>
           {% if work.images %}
           <img class="work-image" src="img/works/{{ work.dir }}/{{ work.images[0] }}" alt="作品画像">
             {% for src in work.images %}
@@ -38,9 +39,9 @@ layout: default
           {% else %}
           <img class="work-image" src="img/works/no-image.gif" alt="No Image">
           {% endif %}
-          <div class="description">
-            <div class="author">{% if work.icon %}<img src="img/works/{{ work.dir }}/{{ work.icon }}" alt="アイコン">{% endif %}<span class="name">{{ work.author }}</span></div>
-            <div class="description">{{ work.description }}</div>
+          <div class="descriptions">
+            <div class="author{% if work.icon %} hasicon{% endif %}">{% if work.icon %}<img src="img/works/{{ work.dir }}/{{ work.icon }}" alt="アイコン">{% endif %}<span class="name">{{ work.author }}</span></div>
+            <div class="commens">{{ work.description }}</div>
           </div>
         </section>
         {% endfor %}
