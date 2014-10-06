@@ -4,49 +4,47 @@ layout: default
 
 <section id="about">
   <div class="wrapper">
-    <h1 class="section-heading"></h1>
+    <div class="section-heading-wrapper">
+      <h1 class="section-heading">About</h1>
+    </div>
+    <div class="section-contents">
+      <p>今年も東京造形大学 Creative Spiral Festival にて、<br>昨年の Media Design Works 2013に引き続き、 Media Design Works 2014 を開催します。</p>
+      <p>東京造形大学メディアデザイン専攻領域の全学年から集まった有志学生が制作した、<br>多数の作品が集まりました。</p>
+      <p>他専攻の展示にはない、実際に触れて体験できる作品を中心に、<br>様々なジャンルの作品を展示します。</p>
+      <p>ぜひご来場ください。</p>
+      <p>Media Design Works 2014 一同</p>
+    </div>
   </div>
 </section>
 
 <div class="capsule">
 
-  <section>
-    <div class="wrapper">
-      <div class="section-heading-wrapper section-heading-wrapper--capsule-top">
-        <h1 class="section-heading">About</h1>
-        <p>今年も東京造形大学 Creative Spiral Festival にて、昨年の Media Design Works 2013に引き続き、 Media Design Works 2014 を開催します。</p>
-        <p>東京造形大学メディアデザイン専攻領域の全学年から集まった有志学生が制作した、多数の作品が集まりました。</p>
-        <p>他専攻の展示にはない、実際に触れて体験できる作品を中心に、様々なジャンルの作品を展示します。</p>
-        <p>ぜひご来場ください。</p>
-        <p>Media Design Works 2014 一同</p>
-      </div>
-    </div>
-  </section>
-
-  <section>
+  <section id="works">
     <div class="wrapper">
       <div class="section-heading-wrapper">
         <h1 class="section-heading">Works</h1>
       </div>
-      {% for work in site.data.works %}
-      <section class="work">
-        <h2 class="work-heading">{{ work.title }}</h2>
-        {% if work.images %}
-        <img src="img/works/{{ work.dir }}/{{ work.images[0] }}" alt="作品画像">
-          {% for src in work.images %}
-          <div class="thumbnails">
-            <img src="img/works/{{ work.dir }}/{{ src }}" alt="作品画像">
+      <div class="works">
+        {% for work in site.data.works %}
+        <section class="work">
+          <h2 class="work-heading">{{ work.title }}</h2>
+          {% if work.images %}
+          <img class="work-image" src="img/works/{{ work.dir }}/{{ work.images[0] }}" alt="作品画像">
+            {% for src in work.images %}
+            <div class="thumbnails">
+              <img src="img/works/{{ work.dir }}/{{ src }}" alt="作品画像">
+            </div>
+            {% endfor %}
+          {% else %}
+          <img class="work-image" src="img/works/no-image.gif" alt="No Image">
+          {% endif %}
+          <div class="description">
+            <div class="author">{% if work.icon %}<img src="img/works/{{ work.dir }}/{{ work.icon }}" alt="アイコン">{% endif %}<span class="name">{{ work.author }}</span></div>
+            <div class="description">{{ work.description }}</div>
           </div>
-          {% endfor %}
-        {% else %}
-        <img src="img/works/no-image.gif" alt="No Image">
-        {% endif %}
-        <div class="description">
-          <div class="author">{% if work.icon %}<img src="img/works/{{ work.dir }}/{{ work.icon }}" alt="アイコン">{% endif %}{{ work.author }}</div>
-          <div class="description">{{ work.description }}</div>
-        </div>
-      </section>
-      {% endfor %}
+        </section>
+        {% endfor %}
+      </div>
     </div>
   </section>
 
@@ -54,15 +52,15 @@ layout: default
     <div class="wrapper">
       <div class="section-heading-wrapper">
         <h1 class="section-heading">Photos</h1>
-        <div class="carousel">
-          <div class="item">
-            <img src="img/pictures/001.jpg" alt="打ち合わせの様子">
-            <p class="description">打ち合わせの様子</p>
-          </div>
-          <div class="item">
-            <img src="img/pictures/002.jpg" alt="昨年度の展示風景">
-            <p class="description">昨年度の展示風景</p>
-          </div>
+      </div>
+      <div class="carousel">
+        <div class="item">
+          <img src="img/pictures/001.jpg" alt="打ち合わせの様子">
+          <p class="description">打ち合わせの様子</p>
+        </div>
+        <div class="item">
+          <img src="img/pictures/002.jpg" alt="昨年度の展示風景">
+          <p class="description">昨年度の展示風景</p>
         </div>
       </div>
     </div>
@@ -72,6 +70,8 @@ layout: default
     <div class="wrapper">
       <div class="section-heading-wrapper">
         <h1 class="section-heading">Info</h1>
+      </div>
+      <div class="section-contents">
         <h2>開催概要</h2>
         <h3>会期</h3>
         <p>10月17日(金) 12:00~20:00</p>
@@ -88,6 +88,8 @@ layout: default
     <div class="wrapper">
       <div class="section-heading-wrapper">
         <h1 class="section-heading">Links</h1>
+      </div>
+      <div class="section-contents">
         <ul>
           <li><a href="//zokei-csf.com" target="_blank">Creative Spiral Festival 2014</a></li>
           <li><a href="//mdpf.xsrv.jp" target="_blank">MDPF</a></li>
