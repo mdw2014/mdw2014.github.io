@@ -95,7 +95,7 @@
   images:
     - image001.png
   icon: icon.png
-  
+
 - title: rainboard
   author: 黒木慶典
   description: Webスクレイピングで雨の情報を集めたwebサイト
@@ -133,7 +133,7 @@
   author: "Garbage man"
   description: 命を狙われたさいとぅーを守りきれ！ テーマは「遊べる映画」。複数のミニゲームを進めながら物語が展開していく映像作品です。
   dir: さいとぅー暗殺計画
-  icon: icon.jpg
+  icon: icon.png
 
 - title: ミラクル☆ドレスアップ
   author: 山本菜摘
