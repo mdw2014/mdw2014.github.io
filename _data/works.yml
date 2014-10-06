@@ -1,7 +1,7 @@
 - title: 任意の画像にレンズフレアを合成するソフト
   author: 浜田祥太
   description: みんな大好きレンズフレアを任意の画像に合成します。
-  dir: 任意の画像にレンズフレアを合成するソフト
+  dir: lensflare
   images:
     - image001.png
   icon: icon.png
