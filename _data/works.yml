@@ -24,8 +24,7 @@
 
 - title: MDPF
   author: MDPF
-  description: メディアデザイン専攻領域の学生が企画、運営するポートフォリオサイトです。このwebサイトを観て、東京造形大学やメディアデザイン専攻領域の大学生活や作品を
-知ってもらえたら幸いです。サイトURL <a href="http://mdpf.xsrv.jp/" target="_blank">http://mdpf.xsrv.jp/</a>
+  description: メディアデザイン専攻領域の学生が企画、運営するポートフォリオサイトです。このwebサイトを観て、東京造形大学やメディアデザイン専攻領域の大学生活や作品を知ってもらえたら幸いです。サイトURL <a href="http://mdpf.xsrv.jp/" target="_blank">http://mdpf.xsrv.jp/</a>
   dir: mdpf
   images:
     - image001.jpg
@@ -33,8 +32,7 @@
 
 - title: AR_BoxDot
   author: 北島 礼花
-  description: 2年次に学んだARに再チャレンジしてみました。
-マーカーを動かして、色々な角度から見てください！
+  description: 2年次に学んだARに再チャレンジしてみました。マーカーを動かして、色々な角度から見てください！
   dir: AR_BoxDot
   images:
     - image001.png
@@ -56,9 +54,9 @@
     - image001.png
   icon: icon.png
 
-- title: THE SUGOI NINJA
-  author: ✝Team THE SUGOI NINJA✝
-  description: "敵を殺さず、敵に見つからず最上階までたどり着け！" Global Math コンテスト2013 開発優秀賞受賞！こどもたちに大人気のゲームが急遽出展決定！未プレイのアナタも、クリア済みのアナタも、ぜひ会場で。
+- title: "THE SUGOI NINJA"
+  author: "✝Team THE SUGOI NINJA✝"
+  description: '"敵を殺さず、敵に見つからず最上階までたどり着け！" Global Math コンテスト2013 開発優秀賞受賞！こどもたちに大人気のゲームが急遽出展決定！未プレイのアナタも、クリア済みのアナタも、ぜひ会場で。'
   dir: the_sugoi_ninja
   images:
     - image001.jpg
@@ -74,7 +72,7 @@
     - image001.jpg
   icon: icon.jpg
 
-- title: ドットヒーロー　Each and every
+- title: "ドットヒーロー　Each and every"
   author: 弓井 隆太
   description: ”Scratch”というプログラミング言語学習環境で制作した「ドットランナー」をFlashとActionScript3.0でリメイク・ゲームシステム部分を改良しようとしている作品です。
   dir: ドットヒーロー
@@ -84,7 +82,7 @@
 
 - title: rainboard
   author: 黒木慶典
-  description: Web スクレイピングで雨の情報を集めたwebサイト
+  description: Webスクレイピングで雨の情報を集めたwebサイト
   dir: rainboard
   images:
     - image001.png
@@ -132,9 +130,8 @@
   icon: icon.png
 
 - title: さいとぅー暗殺計画
-  author: Garbage man
-  description: 命を狙われたさいとぅーを守りきれ！ テーマは「遊べる映画」。
-複数のミニゲームを進めながら物語が展開していく映像作品です。
+  author: "Garbage man"
+  description: 命を狙われたさいとぅーを守りきれ！ テーマは「遊べる映画」。複数のミニゲームを進めながら物語が展開していく映像作品です。
   dir: さいとぅー暗殺計画
   icon: icon.jpg
 
@@ -145,7 +142,7 @@
   icon: icon.jpg
 
 - title: 時間立体ステレオグラム（仮) 企画もまだ固まっていませんので未定でも構いません。未定のがいいかも
-  author: 山本　裕晃　yamamoto　hiroaki
+  author: "山本裕晃　yamamoto hiroaki"
   description: 時間って不思議なものです。そんな映像をつくりました。
   dir: 時間立体ステレオグラム
   icon: icon.png
