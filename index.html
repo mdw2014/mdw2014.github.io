@@ -31,11 +31,11 @@ layout: default
           <div class="triangle"></div>
           {% if work.images %}
           <img class="work-image" src="img/works/{{ work.dir }}/{{ work.images[0] }}" alt="作品画像">
+          <div class="thumbnails">
             {% for src in work.images %}
-            <div class="thumbnails">
-              <img src="img/works/{{ work.dir }}/{{ src }}" alt="作品画像">
-            </div>
+            <img src="img/works/{{ work.dir }}/{{ src }}" alt="作品画像">
             {% endfor %}
+          </div>
           {% else %}
           <img class="work-image" src="img/works/no-image.gif" alt="No Image">
           {% endif %}
