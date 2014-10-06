@@ -80,15 +80,6 @@
     - image001.jpg
   icon: icon.png
 
-- title: rainboard
-  author: 黒木慶典
-  description: Webスクレイピングで雨の情報を集めたwebサイト
-  dir: rainboard
-  images:
-    - image001.png
-    - image002.png
-  icon: icon.png
-
 - title: 俺展
   author: 棚澤直樹
   description: 3DCGモデルを被ります。最高のモデリング体験をします。
@@ -103,6 +94,15 @@
   dir: カチカチ
   images:
     - image001.png
+  icon: icon.png
+  
+- title: rainboard
+  author: 黒木慶典
+  description: Webスクレイピングで雨の情報を集めたwebサイト
+  dir: rainboard
+  images:
+    - image001.png
+    - image002.png
   icon: icon.png
 
 - title: 3d6
