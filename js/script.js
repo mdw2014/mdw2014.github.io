@@ -7,4 +7,20 @@ $(function(){
   $('.triangle').on('click', function(){
     $(this).parent().toggleClass('open');
   });
+
+  var galleryIsOpen = false;
+
+  $('.thumbnails > img').on('click', function(){
+    if (!galleryIsOpen) {
+      src = $(this).attr('src');
+      $('#gallery-img').attr('src', src);
+      $('#gallery').addClass('showing');
+    }
+  });
+
+  $('#gallery-close').on('click', function(){
+    $('#gallery').removeClass('showing');
+    galleryIsOpen = false;
+  });
+
 });
