@@ -194,7 +194,13 @@ a:hover {
   vertical-align: bottom;
 }
 
-.thumbnails,
+.thumbnails {
+  margin: 12px;
+  padding: 6px;
+  background-color: rgba(0, 0, 0, 0.25);
+  display: none;
+}
+
 .descriptions {
   margin: 12px;
   display: none;
@@ -224,12 +230,13 @@ a:hover {
 }
 
 .author {
-  margin-bottom: 6px;
+  margin: 12px 0;
+  padding: 6px;
+  background-color: rgba(0, 0, 0, 0.25);
   font-weight: bold;
 }
 
 .author.hasicon{
-  line-height: 64px;
   height: 64px;
 }
 
@@ -242,6 +249,16 @@ a:hover {
   max-height: 64px;
   width: 64px;
   margin-right: 12px;
+  float: left;
+}
+
+.author .name {
+  text-align: right;
+}
+
+.comments {
+  padding: 6px;
+  background-color: rgba(0, 0, 0, 0.25);
 }
 
 .carousel {
