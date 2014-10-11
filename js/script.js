@@ -1,4 +1,5 @@
 $(function(){
+  $('#backgroundCanvas').width($(window).width).height($(window).height);
 
   $('.triangle').on('click', function(){
     $(this).parent().toggleClass('open');
@@ -26,6 +27,17 @@ $(function(){
   $('.carousel').slick({
     autoplay: true,
     autoplaySpeed: 3000,
+  });
+
+  var resizing = false;
+  $(window).on('resize', function(){
+    if (resizing) {
+      clearTimeout(resizing);
+    }
+
+    resizing = setTimeout(function(){
+      $('#backgroundCanvas').width($(window).width).height($(window).height);
+    }, 300);
   });
 
 });
