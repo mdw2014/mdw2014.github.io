@@ -1,8 +1,4 @@
 $(function(){
-  $('.carousel').slick({
-    autoplay: true,
-    autoplaySpeed: 3000,
-  });
 
   $('.triangle').on('click', function(){
     $(this).parent().toggleClass('open');
@@ -25,6 +21,11 @@ $(function(){
   $('#gallery-close').on('click', function(){
     $('#gallery').removeClass('showing');
     galleryIsOpen = false;
+  });
+
+  $('.carousel').slick({
+    autoplay: true,
+    autoplaySpeed: 3000,
   });
 
 });
