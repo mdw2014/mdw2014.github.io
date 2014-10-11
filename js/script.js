@@ -111,8 +111,13 @@ document.addEventListener('DOMContentLoaded', function(){
     keys = [];
   });
 })([38,38,40,40,37,39,37,39,66,65], function(){
-  if (!galleryIsOpen) {
-    $('#gallery-img').attr('src', 'img/works/no-image.gif');
-    $('#gallery').addClass('showing');
+  var elem = $('#zawa');
+  $(elem).css('display', 'block');
+  if (elem[0].requestFullScreen) {
+    elem[0].requestFullScreen();
+  } else if (elem[0].mozRequestFullScreen) {
+    elem[0].mozRequestFullScreen();
+  } else if (elem[0].webkitRequestFullScreen) {
+    elem[0].webkitRequestFullScreen();
   }
 });
