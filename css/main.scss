@@ -65,24 +65,24 @@ a:hover {
 }
 
 .header-bg-ellipse {
-  margin: 0 auto;
-  width: 960px;
-  height: 520px;
-  border-radius: 480px / 260px;
-  background-color: #80d8c7;
   position: relative;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 960px;
+  border-radius: 50%;
+  background-color: #80d8c7;
 }
 
 .site-header .banner .identity {
-  margin: 0;
-  position: absolute;
+  margin: 0 auto;
+  position: relative;
   z-index: 1;
-  width: 100%;
-  top: 56px;
+  width: 50%;
 }
 
 .identity img {
-  width: 600px;
+  width: 100%;
+  margin: 10% 0px;
 }
 
 .section-heading {
@@ -102,7 +102,7 @@ a:hover {
   text-align: center;
 }
 
-.capsule .wrapper{
+.capsule .wrapper {
   background-color: #cccae5;
   width: 800px;
   padding-bottom: 36px;
@@ -126,7 +126,11 @@ a:hover {
   -ms-flex-flow: row wrap;
 	flex-flow: row wrap;
   -webkit-align-items: flex-start;
+  -ms-align-items: flex-start;
   align-items: flex-start;
+	-webkit-justify-content: space-around;
+  -ms-justify-content: space-around;
+	justify-content: space-around;
 }
 
 #works .section-heading,
@@ -135,9 +139,9 @@ a:hover {
 }
 
 .work {
-  -ms-flex: 0 0 320px;
-  -webkit-flex: 0 0 320px;
-  flex: 0 0 320px;
+  -ms-flex: 0 1 320px;
+  -webkit-flex: 0 1 320px;
+  flex: 0 1 320px;
   width: 320px;
   margin: 0 30px 24px;
   position: relative;
@@ -352,3 +356,31 @@ a:hover {
   color: #f4e84e;
 }
 
+@media (max-width: 960px) {
+  .nav ul li {
+    -webkit-flex: none;
+    -ms-flex: none;
+    flex: none;
+    border: none;
+    border-bottom: 2px dashed #a29ad6;
+  }
+
+  .wrapper,
+  .capsule .wrapper {
+    width: 90%;
+  }
+
+  .section-contents {
+    width: 90%;
+  }
+
+  .work {
+    margin: 0 8px 24px;
+  }
+
+  .carousel img {
+    width: 100%;
+    height: auto;
+  }
+
+}
