@@ -74,16 +74,14 @@ a:hover {
 
 .site-header .banner {
   text-align: center;
-  margin: 40px auto;
+  margin: 0 auto 40px;
   position: relative;
 }
 
 .header-bg-ellipse {
   position: relative;
   margin: 0 auto;
-  width: 90%;
-  max-width: 960px;
-  border-radius: 50%;
+  border-radius: 0 0 100% 100%;
   background-color: #80d8c7;
 }
 
