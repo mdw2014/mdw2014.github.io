@@ -1,15 +1,11 @@
+var galleryIsOpen = false;
+
 $(function(){
   $('#backgroundCanvas').attr('width', $(window).width()).attr('height', $(window).height());
 
-  $('.triangle').on('click', function(){
-    $(this).parent().toggleClass('open');
-  });
+  $('.triangle').on('click', function(){ $(this).parent().toggleClass('open'); });
 
-  $('#hamburger').on('click', function(){
-    $('.nav').toggleClass('open');
-  });
-
-  var galleryIsOpen = false;
+  $('#hamburger').on('click', function(){ $('.nav').toggleClass('open'); });
 
   $('.thumbnails > img').on('click', function(){
     if (!galleryIsOpen) {
@@ -40,24 +36,11 @@ $(function(){
     }, 300);
   });
 
-  (function(cmd, fire) {
-    var keys = [];
-    var l = cmd.length, CMD = cmd.join(',');
-    $(document).on('keydown', function(event) {
-      keys.push(event.which);
-      if (keys.length < l) return true;
-      if (keys.join(',') === CMD) fire();
-      keys = [];
-    });
-  })([38,38,40,40,37,39,37,39,66,65], function(){
-    if (!galleryIsOpen) {
-      $('#gallery-img').attr('src', 'img/works/no-image.gif');
-      $('#gallery').addClass('showing');
-    }
-  });
-
 });
 
+///////////////////////////////////////
+//  Canvasまわり
+///////////////////////////////////////
 function getRandomArbitary(min, max) {
   return Math.random() * (max - min) + min;
 }
@@ -113,4 +96,23 @@ document.addEventListener('DOMContentLoaded', function(){
 
   setup();
   draw();
+});
+
+///////////////////////////////////////
+//  ʅ(´◔౪◔)ʃ< ァァ〜〜〜〜
+///////////////////////////////////////
+(function(cmd, fire) {
+  var keys = [];
+  var l = cmd.length, CMD = cmd.join(',');
+  $(document).on('keydown', function(event) {
+    keys.push(event.which);
+    if (keys.length < l) return true;
+    if (keys.join(',') === CMD) fire();
+    keys = [];
+  });
+})([38,38,40,40,37,39,37,39,66,65], function(){
+  if (!galleryIsOpen) {
+    $('#gallery-img').attr('src', 'img/works/no-image.gif');
+    $('#gallery').addClass('showing');
+  }
 });
