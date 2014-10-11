@@ -17,6 +17,20 @@ a:hover {
   text-decoration: underline;
 }
 
+#hamburger {
+  width: 24px;
+  display: none;
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  z-index: 200;
+}
+
+#hamburger hr {
+  border: 2px solid #000;
+  margin: 4px 0;
+}
+
 .wrapper {
   width: 960px;
   margin: 0 auto;
@@ -357,6 +371,22 @@ a:hover {
 }
 
 @media (max-width: 960px) {
+  #hamburger {
+    display: block;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .nav.open {
+    display: block;
+  }
+
+  .nav ul {
+    display: block;
+  }
+
   .nav ul li {
     -webkit-flex: none;
     -ms-flex: none;

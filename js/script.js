@@ -8,6 +8,10 @@ $(function(){
     $(this).parent().toggleClass('open');
   });
 
+  $('#hamburger').on('click', function(){
+    $('.nav').toggleClass('open');
+  });
+
   var galleryIsOpen = false;
 
   $('.thumbnails > img').on('click', function(){
