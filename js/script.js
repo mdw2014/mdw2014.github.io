@@ -66,7 +66,6 @@ document.addEventListener('DOMContentLoaded', function(){
   var boids = [];
   var canvas = document.getElementById('backgroundCanvas');
   var ctx = canvas.getContext('2d');
-  ctx.fillStyle = '#fff';
 
   var Boid = function(size, x, y, velX, velY) {
     this.size = size;
@@ -93,6 +92,7 @@ document.addEventListener('DOMContentLoaded', function(){
     for (var i = 0; i < boids.length; i++) {
       ctx.beginPath();
       ctx.arc(boids[i].x, boids[i].y, boids[i].size, 0, Math.PI*2.0);
+      ctx.fillStyle = '#fff';
       ctx.fill();
 
       if (boids[i].x < -boids[i].size) boids[i] = canvas.width;
