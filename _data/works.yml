@@ -96,6 +96,14 @@
     - image001.png
   icon: icon.png
 
+- title: カメレオンゴースト
+  author: 清水友里
+  description: Scratchで製作したおばけを操作するステルスゲームです。寝ている男の子にバレないよう、おばけの色を操作したり障害物をよけながらタイムリミット内に男の子ところまで到達して脅かしましょう。
+  dir: カメレオンゴースト
+  images:
+    - image001.jpg
+  icon: icon.png
+
 - title: rainboard
   author: 黒木慶典
   description: Webスクレイピングで雨の情報を集めたwebサイト
@@ -122,12 +130,6 @@
   description: メディアデザイン専攻領域に入学して４年目、パソコンの画面と向き合う毎日。しかし、物を作りたいと思う起点は私の場合『ここ』にあります。
   dir: 使う道具は何でも良い
   icon: icon.jpg
-
-- title: カメレオンゴースト
-  author: 清水友里
-  description: Scratchで製作したおばけを操作するステルスゲームです。寝ている男の子にバレないよう、おばけの色を操作したり障害物をよけながらタイムリミット内に男の子ところまで到達して脅かしましょう。
-  dir: カメレオンゴースト
-  icon: icon.png
 
 - title: さいとぅー暗殺計画
   author: "Garbage man"
