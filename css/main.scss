@@ -74,28 +74,21 @@ a:hover {
 
 .site-header .banner {
   text-align: center;
-  margin: 0 auto 40px;
-  position: relative;
-  height: 360px;
+  margin: 0 auto 24px;
+  height: auto;
+  max-width: 960px;
 }
 
 .header-bg-ellipse {
-  position: absolute;
-  top: -25%;
-  width: 960px;
-  height: 480px;
-  border-radius: 0 0 480px 480px;
+  position: relative;
+  width: 100%;
+  border-radius: 0 0 100% 100% / 0 0 200% 200%;;
   background-color: #80d8c7;
-  margin-left: 50%;
-  left: -480px;
 }
 
 .site-header .banner .identity {
   margin: 0 auto;
-  position: relative;
-  z-index: 1;
   width: 50%;
-  top: 10%;
 }
 
 .identity img {
@@ -397,23 +390,6 @@ a:hover {
     flex: none;
     border: none;
     border-bottom: 2px dashed #a29ad6;
-  }
-
-  .site-header .banner {
-    height: auto;
-  }
-
-  .header-bg-ellipse {
-    position: relative;
-    width: 100%;
-    height: auto;
-    margin: 0;
-    top: 0;
-    left: 0;
-    border-radius: 0 0 100% 100% / 0 0 200% 200%;
-  }
-  .site-header .banner .identity  {
-    top: 0;
   }
 
   .wrapper,
