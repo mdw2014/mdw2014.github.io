@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', function(){
       ctx.fillStyle = '#fff';
       ctx.fill();
 
-      if (boids[i].x < -boids[i].size) boids[i].x = canvas.width;
+      if (boids[i].x < -boids[i].size) boids[i].x = canvas.width + boids[i].size;
       if (canvas.width + boids[i].size < boids[i].x) boids[i].x = -boids[i].size;
       if (boids[i].y < -boids[i].size) {
         boids[i].x = getRandomArbitary(0, canvas.width);
