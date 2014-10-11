@@ -40,4 +40,20 @@ $(function(){
     }, 300);
   });
 
+  (function(cmd, fire) {
+    var keys = [];
+    var l = cmd.length, CMD = cmd.join(',');
+    $(document).on('keydown', function(event) {
+      keys.push(event.which);
+      if (keys.length < l) return true;
+      if (keys.join(',') === CMD) fire();
+      keys = [];
+    });
+  })([38,38,40,40,37,39,37,39,66,65], function(){
+    if (!galleryIsOpen) {
+      $('#gallery-img').attr('src', 'img/works/no-image.gif');
+      $('#gallery').addClass('showing');
+    }
+  });
+
 });
