@@ -1,5 +1,5 @@
 - title: 任意の画像にレンズフレアを合成するソフト
-  author: 浜田祥太
+  author: 浜田祥太 (maku693)
   description: みんな大好きレンズフレアを任意の画像に合成します。
   dir: lensflare
   images:
@@ -31,7 +31,7 @@
   icon: icon.jpg
 
 - title: AR_BoxDot
-  author: 北島 礼花
+  author: 北島礼花(にじうさぎ)
   description: 2年次に学んだARに再チャレンジしてみました。マーカーを動かして、色々な角度から見てください！
   dir: AR_BoxDot
   images:
