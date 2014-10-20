@@ -14,6 +14,12 @@
     - image001.png
   icon: icon.png
 
+- title: MISSION//MDW
+  description: ――私が見えますか？ どうか私の取り、世界を救ってください。
+  dir: NEO
+  images:
+    - image001.png
+
 - title: GACHACHA
   author: 木下さくら
   description: ピカピカ　ドキドキ　ガチャガチャ　ぽん！
